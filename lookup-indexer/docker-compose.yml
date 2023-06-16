@@ -3,5 +3,5 @@ services:
   lookup-indexer:
     build: ./
     volumes:
-      - ../examples/index-config.yml:/lookup-indexer/index-config.yml
+      - ./index-config.yml:/lookup-indexer/index-config.yml
       - ../index:/index

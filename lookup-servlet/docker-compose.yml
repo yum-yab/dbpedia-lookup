@@ -5,6 +5,6 @@ services:
     ports:
       - 8081:8082
     volumes:
-      - ../examples/servlet-config.yml:/lookup/config.yml
+      - ./servlet-config.yml:/lookup/config.yml
       - ../index:/lookup/index
       - ../examples/index.html:/lookup/webapp/index.html

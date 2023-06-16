@@ -1,0 +1,23 @@
+version: "1.0"
+indexPath: ./index
+exactMatchBoost: 10
+prefixMatchBoost: 5
+fuzzyMatchBoost: 2
+fuzzyEditDistance: 2
+fuzzyPrefixLength: 2
+maxResults: 100
+format: JSON
+minRelevanceScore: 0.1
+queryFields:
+  - fieldName: subject
+    weight: 10
+    tokenize: true
+    queryByDefault: true
+  - fieldName: description
+    weight: 10
+    tokenize: true
+    queryByDefault: true
+  - fieldName: title
+    weight: 10
+    tokenize: true
+    queryByDefault: true
